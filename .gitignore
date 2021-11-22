@@ -3,6 +3,7 @@ docker-compose.yml
 zconf/*
 logs/*
 data/*
+notebook/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
