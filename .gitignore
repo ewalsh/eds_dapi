@@ -4,6 +4,7 @@ zconf/*
 logs/*
 data/*
 notebook/*
+notebook
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
