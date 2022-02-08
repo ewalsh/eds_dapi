@@ -1,8 +1,13 @@
 import requests
 import os
 from dotenv import load_dotenv
+from typing import List, Dict
 
 load_dotenv()
+
+
+def mapToDict(dat: List) -> Dict:
+    return {dat[0]['data'][i][0]: dat[0]['data'][i][1] for i in range(0, len(dat[0]['data']))}
 
 
 class EDSsession():
@@ -15,6 +20,7 @@ class EDSsession():
         self.session.post(
             'https://economicdatasciences.com/login', data=self.payload)
 
+    # benchmark
     def get_benchmark(self, code):
         get_str = 'https://economicdatasciences.com/benchmarks/' + code
         res = self.session.get(get_str)
