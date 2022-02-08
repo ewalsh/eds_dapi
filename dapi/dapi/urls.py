@@ -19,5 +19,5 @@ import capm.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', capm.views.index)
+    path('', capm.views.Index.as_view())
 ]

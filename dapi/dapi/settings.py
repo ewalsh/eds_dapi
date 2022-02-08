@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_framework.authtoken',
     # apps
     'capm'
 ]
@@ -86,9 +88,13 @@ WSGI_APPLICATION = 'dapi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dapi',
+        'USER': 'pgsqldb',
+        'PASSWORD': os.getenv('PASSWORD', 'not-public'),
+        'HOST': '172.88.0.100',
+        'PORT': '5432',
+    },
 }
 
 
@@ -129,6 +135,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+# STATIC_ROOT = './static_dev/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

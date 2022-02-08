@@ -5,6 +5,7 @@ logs/*
 data/*
 notebook/*
 notebook
+.env
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

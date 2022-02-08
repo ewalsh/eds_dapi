@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <!--  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Economic Data Sciences is an international consulting and technology firm using apps and systematic in-depth decision science to improve client outcomes.">
+  <meta charset="UTF-8">
+  <title>Economic Data Sciences | Decision Science | Analytics & Consulting</title>
+  <meta name="author" content="Edmund Walsh">
+  <!-- social media  -->
+  <meta property="fb:app_id" content="2904117083177567">
+  <meta property="og:url" content="https://www.demo.economicdatasciences.com">
+  <meta property="og:title" content="Economic Data Sciences | Outcome Driven Decision Science">
+  <meta property="og:description" content="Economic Data Sciences is an international consulting and technology firm using apps and systematic in-depth decision science to improve client outcomes.">
+
+  <!-- FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yantramanav" rel="stylesheet">
+  <!-- Images -->
+  <link rel="shortcut icon" type="image/png" href={% static 'capm/images/edsloop.svg' %}>
+ <!-- CSS -->
+ <link rel="stylesheet" href={% static 'capm/css/main.css' %}></link>
+ <link rel="stylesheet" href={% static 'capm/css/uikit.min.css' %}></link>
+ <!-- JavaScript -->
+  <script type="text/javascript" src={% static 'capm/js/uikit.js' %}></script>
+  <script type="text/javascript" src={% static 'capm/js/jquery-3.6.0.min.js' %}></script>
+  <script type="text/javascript" src={% static 'capm/js/uikit-icons.js' %}></script>
+
+</head>
+<body>
+  <div class="uk-container-expand">
+
+  {% block content %}
+  {% endblock %}
+
+  </div>

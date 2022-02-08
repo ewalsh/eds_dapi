@@ -1,0 +1,97 @@
+{% load static %}
+{% block nav %}
+<div class="uk-container uk-container-medium">
+  <nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+
+       <ul class="uk-navbar-nav">
+           <li class="uk-active">
+             <a class="uk-navbar-item uk-logo" href="/">
+               <img src={% static 'capm/images/edsblue.svg' %} class="logo" alt="EDS">
+             </a>
+           </li>
+       </ul>
+
+   </div>
+
+   <div class="uk-navbar-right">
+     <ul class="uk-navbar-nav">
+       <li class="uk-active"><a class="underline" href="#">Demos</a></li>
+          <div class="uk-width-large" uk-dropdown="boundary: .loopa; boundary-align: true">
+            <div class="uk-dropdown-grid uk-child-width-1-2@@m" uk-grid>
+                <div>
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-nav-header uk-heading-bullet">Demos List<span class="drop-icon" uk-icon="icon: thumbnails"></li>
+                          <div class="uk-grid-large uk-child-width-expand@s uk-text-center" uk-grid>
+                             <div>
+                                 <div class="uk-card uk-card-default uk-card-body clear-card"></div>
+                             </div>
+                             <div>
+                                 <div class="uk-card uk-card-default uk-card-body clear-card">
+                                   <ul>
+                                     <li><a id="optim-every" class="drop-text nav-lang-switch" href="/apps/everything">Optimization Everything</a></li>
+                                     <li><a class="drop-text" href="/apps/balance">Balance</a></li>
+                                     <li><a class="drop-text" href="/apps/enhance" style="padding-bottom: 0px;">Enhance</a></li>
+                                   </ul>
+                                 </div>
+                             </div>
+                             <div>
+                                 <div class="uk-card uk-card-default uk-card-body clear-card uk-text-break">
+                                   <ul>
+                                     <li><a class="drop-text" href="/apps/monitor">Monitor</a></li>
+                                     <li><a class="drop-text" href="/apps/seek">Seek</a></li>
+                                     <li><a class="drop-text" href="/apps/track" style="padding-bottom: 0px;">Track</a></li>
+                                   </ul>
+                                 </div>
+                             </div>
+                             <div>
+                                 <div class="uk-card uk-card-default uk-card-body clear-card">
+                                   <ul>
+                                     <li><a class="drop-text" href="/apps/sustain">Sustain</a></li>
+                                     <li><a class="drop-text" href="/apps/simulate">Scenario Simulator</a></li>
+                                     <li><a class="drop-text" href="/apps/connect" style="padding-bottom: 0px;">Preference Connect</a></li>
+                                   </ul>
+                                 </div>
+                             </div>
+                         </div>
+                        <li class="uk-nav-divider"></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-nav-header uk-heading-bullet">The Power Of Apps<span class="drop-icon" uk-icon="icon: rss"></span></li>
+                        <li><a class="drop-text" href="/why-apps">Why Apps</a></li>
+                        <li><a class="drop-text" href="/sway/u9TF9eCaU3iUi1Ju">Read More About Implementing Insight By Integrating Apps</a></li>
+                        <li class="uk-nav-divider"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a class="loopa" href="#"><img class="uk-border-circle" src={% static 'capm/images/edsblackLoop.svg' %} id="loop-pill" alt="Loop" uk-svg></a>
+        <div class="uk-width-large" uk-dropdown="boundary: .loopa; boundary-align: true">
+          <div class="uk-dropdown-grid uk-child-width-1-2@@m" uk-grid>
+              <div>
+                  <ul class="uk-nav uk-dropdown-nav">
+                      <li class="uk-nav-header uk-heading-bullet">User Profile<span class="drop-icon" uk-icon="icon: user"></li>
+                      <li><a class="drop-text" href="/login">Login</a></li>
+                      <li><a class="drop-text" href="/signup-email">Signup</a></li>
+                      <li class="uk-nav-divider"></li>
+                  </ul>
+              </div>
+              <div>
+                  <ul class="uk-nav uk-dropdown-nav">
+                      <li class="uk-nav-header uk-heading-bullet">Contact Us <span class="drop-icon" uk-icon="icon: receiver"></span></li>
+                      <li><a class="drop-text" href="mailto:info@@economicdatasciences.com">Email</a></li>
+                      <li><a class="drop-text" href="/schedule">Schedule A Meeting</a></li>
+                      <li class="uk-nav-divider"></li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+   </div>
+ </nav>
+</div>
+
+
+{% endblock %}
+</html>
