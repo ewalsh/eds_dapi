@@ -1,13 +1,13 @@
 import requests
 import os
 from dotenv import load_dotenv
-from typing import List, Dict
+from typing import List, Dict, Text
 
 load_dotenv()
 
 
-def mapToDict(dat: List) -> Dict:
-    return {dat[0]['data'][i][0]: dat[0]['data'][i][1] for i in range(0, len(dat[0]['data']))}
+def mapToDict(dat: List, name: Text = 'data', col_iter: int = 0) -> Dict:
+    return {dat[col_iter][name][i][0]: dat[col_iter][name][i][1] for i in range(0, len(dat[col_iter][name]))}
 
 
 class EDSsession():
