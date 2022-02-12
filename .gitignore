@@ -5,6 +5,9 @@ logs/*
 data/*
 notebook/*
 notebook
+node_modules
+package-lock.json
+dapi/capm/static/capm/public/compiled
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
