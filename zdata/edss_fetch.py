@@ -4,6 +4,10 @@ import pandas as pd
 from copy import deepcopy
 
 
+# we are on a private git, so it is fine, but it is normally
+# bad practice to include log-in details within the code.
+# when you have time, I would suggest looking at .env
+# and the pythong dotenv package
 eds_email = 'info@economicdatasciences.com'
 eds_pass = 'Xp6UywFJ8fG!H6th'
 
